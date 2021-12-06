@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		nav {
+			background-color: #595959;
+			color: #ffffff;
+			list-style: none;
+			text-align: right;
+			padding: 0 0px 0 25px;
+		}
+
+		nav .logo {
+			float: left;
+			padding: 0 25px 0 25px;
+		}
+
+		nav li {
+			display: inline-block;
+			padding: 0 25px 0 25px;
+		}
+
+		.banner {
+			background-image: url(../background_1.jpg);
+			background-size: cover;
+			background-position: center;
+			top: 100px;
+			height: 100vh;
+			width: 100%
+		}
+
+		h1{
+			padding: 8%;
+			font-size: 80px;
+			color:darkblue;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			font-size: 5rem;
+		}
+
+		/* gallery */
+		#images {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 10px;
+		}
+
+		.column {
+			flex: 25%;
+			max-width: 25%;
+			padding: 5 5px 5 5px;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<div class="logo">
+			BEYOUTY
+		</div>
+
+		<ul>
+			<li><a href ="#home">Home</a></li>
+			<li><a href ="#services">Services</a></li>
+			<li><a href ="#gallery">Gallery</a></li>
+			<li><a href ="#jobs">Jobs</a></li>
+			<li><a href ="#contact">Contact</a></li>
+	</nav>
+
+	<section id="home">
+		<div class="banner">
+			<h1>Welcome to Beyouty</h1>
+		</div>
+
+		<p>
+			Preserve the inherent beauty of your hands.<br/>
+			Your feet deserve to be treated properly after all day long.<br/>
+			Come and let us take care of you.
+		</p>
+	</section>
+
+	<section id=gallery>
+		<div id="images">
+			<div class = column>
+				<img src="images/image_1.jpeg" alt="images 1" style="width:100%">
+				<img src="images/image_2.jpeg" alt="images 2" style="width:100%">
+				<img src="images/image_3.jpeg" alt="images 3" style="width:100%">
+				<img src="images/image_4.jpeg" alt="images 4" style="width:100%">
+				<img src="images/image_5.jpeg" alt="images 5" style="width:100%">
+				<img src="images/image_6.jpeg" alt="images 6" style="width:100%">
+				<img src="images/image_7.jpeg" alt="images 7" style="width:100%">
+				<img src="images/image_8.jpeg" alt="images 8" style="width:100%">
+				<img src="images/image_9.jpeg" alt="images 9" style="width:100%">
+			</div>
+
+			<div class = column>
+				<img src="images/image_10.jpeg" alt="images 10" style="width:100%">
+				<img src="images/image_11.jpeg" alt="images 11" style="width:100%">
+				<img src="images/image_12.jpeg" alt="images 12" style="width:100%">
+				<img src="images/image_13.jpeg" alt="images 13" style="width:100%">
+				<img src="images/image_14.jpeg" alt="images 14" style="width:100%">
+				<img src="images/image_15.jpeg" alt="images 15" style="width:100%">
+				<img src="images/image_16.jpeg" alt="images 16" style="width:100%">
+				<img src="images/image_17.jpeg" alt="images 17" style="width:100%">
+				<img src="images/image_18.jpeg" alt="images 18" style="width:100%">
+			</div>
+
+			<div class = column>
+				<img src="images/image_19.jpeg" alt="images 19" style="width:100%">
+				<img src="images/image_20.jpeg" alt="images 20" style="width:100%">
+				<img src="images/image_21.jpeg" alt="images 21" style="width:100%">
+				<img src="images/image_22.jpeg" alt="images 22" style="width:100%">
+				<img src="images/image_23.jpeg" alt="images 23" style="width:100%">
+				<img src="images/image_24.jpeg" alt="images 24" style="width:100%">
+				<img src="images/image_25.jpeg" alt="images 25" style="width:100%">
+				<img src="images/image_26.jpeg" alt="images 26" style="width:100%">
+				<img src="images/image_27.jpeg" alt="images 27" style="width:100%">
+			</div>
+
+			<div class = column>
+				<img src="images/image_28.jpeg" alt="images 28" style="width:100%">
+				<img src="images/image_29.jpeg" alt="images 29" style="width:100%">
+				<img src="images/image_30.jpeg" alt="images 30" style="width:100%">
+				<img src="images/image_31.jpeg" alt="images 31" style="width:100%">
+				<img src="images/image_32.jpeg" alt="images 32" style="width:100%">
+				<img src="images/image_33.jpeg" alt="images 33" style="width:100%">
+				<img src="images/image_34.jpeg" alt="images 34" style="width:100%">
+				<img src="images/image_35.jpeg" alt="images 35" style="width:100%">
+				<img src="images/image_36.jpeg" alt="images 36" style="width:100%">
+			</div>
+		<div>
+	</section>
+
+
+
+	<footer>
+		<p>
+			&copy Copyright 2021 by Beyouty
+		</p>
+	</footer>
+
+</body>
+</html>
